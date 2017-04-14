@@ -1,0 +1,9 @@
+div.navigation {
+    padding: 10px;
+    text-align: left;
+}
+
+a {
+    color:black;
+    font-family: "Courier";
+}
