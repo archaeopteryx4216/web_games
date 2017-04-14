@@ -1,0 +1,17 @@
+body {
+	background-image: url(retina_wood.png);
+}
+
+#canvas-container {
+	float:left;
+	width: 70%;
+	text-align: center;
+}
+
+canvas {
+	display:inline;
+	border-top: 0.25in solid black;
+	border-bottom: 0.25in solid black;
+	border-left: 1in solid black;
+	border-right: 1in solid black;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Flappy Duck</title>
+    <script src="flappyDuck.js"></script>
+    <link rel="stylesheet" type="text/css" href="flappyDuck.css" />
+</head>
+<body>
+	<img id="duck" src="flappyDuck.png" style="display: none;"/>
+	<img id="pipe" src="flappyDuckPipe.png" style="display: none;"/>
+	<img id="cloud" src="flappyDuckCloud.png" style="display: none" />
+	<audio id="ducks" autoplay loop volume="0.5">
+		<source src="ducks.wav" type="audio/wav">
+		Please upgrade to a browser that supports HTML5 Audio.
+	</audio>
+	<audio id="coin">
+		<source src="coin.wav" type="audio/wav">
+		Please upgrade to a browser that supports HTML5 Audio.
+	</audio>
+	<audio id="crash">
+		<source src="crash.wav" type="audio/wav">
+		Please upgrade to a browser that supports HTML5 Audio.
+	</audio>
+	<audio id="flap">
+		<source src="wing_flap.wav" type="audio/wav">
+		Please upgrade to a browser that supports HTML5 Audio.
+	</audio>
+	<audio id="quack">
+		<source src="quack.wav" type="audio/wav">
+		Please upgrade to a browser that supports HTML5 Audio.
+	</audio>
+	<div id="canvas-container">
+    	<canvas id="screen" width=512 height=512 tabindex='1'>
+    		Please upgrade to a browser that supports HTML5 Canvas.
+    	</canvas>
+    </div>
+    <script>
+    	var game = new FlappyDuckGame(
+    		document.getElementById("screen"),
+    		document.getElementById("duck"),
+    		document.getElementById("pipe"),
+    		document.getElementById("cloud"),
+			document.getElementById("coin"),
+			document.getElementById("crash"),
+			document.getElementById("flap"),
+			document.getElementById("quack"),
+			document.getElementById("ducks"));
+    	setupGame(game,60);
+    </script>
+</body>
